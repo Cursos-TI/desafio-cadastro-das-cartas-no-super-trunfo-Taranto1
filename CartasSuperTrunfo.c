@@ -40,9 +40,50 @@ int main() {
     printf("============================================\n"
         "Bem-vindo ao jogo Super Trunfo Cidades!\n"
         "Prepare-se para desafiar seus conhecimentos!\n"
-        "============================================");
-    printf("Para começar, você precisará inserir alguns dados para cadastrar as cidades.\n");    
+        "============================================\n");
+    
+    // aguardando resposta do usuário
+    getchar();
 
+    // limpando a tela
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+    // mensagem de início
+    printf("Para começar, você precisará inserir alguns dados para cadastrar as cartas.\n");
+    
+    // aguardando resposta do usuário
+    getchar();
+
+    // inserindo dados da carta 01
+    printf("Dados da primeira carta\n");
+    printf("Digite o Estado (representado por uma letra de 'A' a 'H'): \n");
+    scanf(" %c", &Estado_01); // Lê o caracter representando o Estado
+    printf("Insira o código da carta A letra do estado seguida de um número de 01 a 04 (ex: A01): \n"); 
+    scanf("%s", &cod_carta_01); // Lê a string para o código da carta
+    printf("Insira o nome da cidade: \n");
+    scanf("%s", &cidade_01); // Lê a string para o nome da cidade
+    printf("Digite o número de habitantes da cidade: \n");
+    scanf("%d", &populacao_cid_01);
+    printf("Digite a área da cidade (em km²): \n");
+    scanf("%f", area_cid_01); // Lê o tamanho da área da cidade
+    print("Informe o Produto Interno Bruto da cidade: \n");
+    scanf("%f", PIB_cid_01); // Lê o PIB da cidade
+    print("Insira o número de pontos turísticos da cidade: \n");
+    scanf("%d", ponto_turistico_cid_01); // Lê a quantidade de pontos turísticos da cidade
+
+    // Exibindo os dados da carta 01
+
+    printf("Carta 01\n");
+    printf("Estado: %c\n", Estado_01); // Imprime o Estado
+    printf("Código: %s\n", cod_carta_01); // Imprime o código da carta
+    printf("Nome da Cidade: %s\n", cidade_01); // Imprime o nome da cidade
+    printf("População: %d\n", populacao_cid_01); // Imprime a população da cidade
+    printf("Área: %.2f", area_cid_01); // Imprime a área da cidade
+    printf("PIB: %.2f", PIB_cid_01); // Imprime o PIB da cidade
+    printf("Números de Pontos Turísticos: %d\n", ponto_turistico_cid_01); // Imprime o número de pontos turísticos da cidade
+
+
+    
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Cadastro das Cartas:
