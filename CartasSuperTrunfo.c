@@ -45,7 +45,7 @@ int main() {
     // aguardando resposta do usuário
     getchar();
 
-    // limpando a tela
+    // "limpando a tela"
     printf("\n\n\n\n\n\n\n\n\n");
 
     // mensagem de início
@@ -54,7 +54,7 @@ int main() {
     // aguardando resposta do usuário
     getchar();
 
-    // inserindo dados da carta 01
+    // Leitura dos dados da carta 01
     printf("DADOS DA CARTA 01\n");
     printf("Digite o Estado (representado por uma letra de 'A' a 'H'): \n");
     scanf(" %c", &Estado_01); // Lê o caracter representando o Estado
@@ -71,6 +71,27 @@ int main() {
     printf("Insira o número de pontos turísticos da cidade: \n");
     scanf("%d", &ponto_turistico_cid_01); // Lê a quantidade de pontos turísticos da cidade
 
+    printf("\n\n\n");
+
+    // Leitura dos dados da carta 02
+    printf("DADOS DA CARTA 02\n");
+    printf("Digite o Estado (representado por uma letra de 'A' a 'H'): \n");
+    scanf(" %c", &Estado_02); 
+    printf("Insira o código da carta A letra do estado seguida de um número de 01 a 04 (ex: A01): \n"); 
+    scanf("%s", cod_carta_02); 
+    printf("Insira o nome da cidade: \n");
+    scanf("%s", cidade_02); 
+    printf("Digite o número de habitantes da cidade: \n");
+    scanf("%d", &populacao_cid_02);
+    printf("Digite a área da cidade (em km²): \n");
+    scanf("%f", &area_cid_02); 
+    printf("Informe o Produto Interno Bruto da cidade: \n");
+    scanf("%f", &PIB_cid_02); 
+    printf("Insira o número de pontos turísticos da cidade: \n");
+    scanf("%d", &ponto_turistico_cid_02); 
+
+    printf("\n\n\n");
+
     // Exibindo os dados da carta 01
 
     printf("Carta 01\n");
@@ -78,9 +99,21 @@ int main() {
     printf("Código: %s\n", cod_carta_01); // Imprime o código da carta
     printf("Nome da Cidade: %s\n", cidade_01); // Imprime o nome da cidade
     printf("População: %d\n", populacao_cid_01); // Imprime a população da cidade
-    printf("Área: %.2f\n", area_cid_01); // Imprime a área da cidade
-    printf("PIB: %.2f\n", PIB_cid_01); // Imprime o PIB da cidade
+    printf("Área: %.2f km²\n", area_cid_01); // Imprime a área da cidade
+    printf("PIB: %.2f bilhões de Reais\n", PIB_cid_01); // Imprime o PIB da cidade
     printf("Números de Pontos Turísticos: %d\n", ponto_turistico_cid_01); // Imprime o número de pontos turísticos da cidade
+
+    printf("\n\n");
+    // Exibindo os dados da carta 02
+
+    printf("Carta 02\n");
+    printf("Estado: %c\n", Estado_02); 
+    printf("Código: %s\n", cod_carta_02);
+    printf("Nome da Cidade: %s\n", cidade_02); 
+    printf("População: %d\n", populacao_cid_02); 
+    printf("Área: %.2f km²\n", area_cid_02); 
+    printf("PIB: %.2f bilhões de Reais\n", PIB_cid_02); 
+    printf("Números de Pontos Turísticos: %d\n", ponto_turistico_cid_02); 
 
 
     
